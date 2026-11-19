@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Consciente | Golpe da Mão Fantasma</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>🛡️ Cyber Consciente — SIPAT 2026</h1>
+      <p>Aluna: <strong>Lilian Eliani Alanoca Quispe</strong> | Nº 22 | Desenvolvimento de Sistemas — SENAI</p>
+      <nav>
+        <a href="#sobre">O Golpe</a>
+        <a href="#caso-real">Caso Real</a>
+        <a href="#prevencao">Prevenção</a>
+        <a href="#simulador">Simulador</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#compartilhados">Computadores Compartilhados</a>
+        <a href="#fontes">Fontes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Apresentação -->
+    <section id="sobre" class="card">
+      <h2>1. O que é o Golpe da "Mão Fantasma"?</h2>
+      <p>O golpe da <strong>"mão fantasma"</strong> é uma fraude cibernética em que criminosos convencem a vítima a instalar um aplicativo de acesso remoto no celular. Com o controle total do aparelho à distância, os golpistas mexem na tela sozinhos — como se fosse uma "mão invisível" — para acessar aplicativos bancários, fazer transferências via PIX, contratar empréstimos e alterar senhas.</p>
+      
+      <h3>Como o golpe acontece (Sinais de alerta):</h3>
+      <ul>
+        <li><strong>Contato falso:</strong> O criminoso liga ou envia SMS fingindo ser da central de segurança do banco, informando uma compra suspeita ou bloqueio de conta.</li>
+        <li><strong>Urgência e medo:</strong> Ele pressiona a vítima dizendo que o dinheiro será roubado se ela não agir naquele instante.</li>
+        <li><strong>Instalação de app remoto:</strong> O falso atendente orienta baixar um aplicativo "de segurança" ou "suporte" (muitas vezes fora da loja oficial ou apps legítimos de suporte remoto usados para o mal).</li>
+        <li><strong>Invasão silenciosa:</strong> Assim que a vítima concede as permissões de acessibilidade, o criminoso assume o controle da tela e esvazia a conta.</li>
+      </ul>
+    </section>
+
+    <!-- Caso Real -->
+    <section id="caso-real" class="card">
+      <h2>2. Caso Real Investigado</h2>
+      <div class="noticia-box">
+        <p><strong>Notícia:</strong> Operação policial prende quadrilha especializada no golpe da "mão fantasma" que invadia celulares para limpar contas bancárias.</p>
+        <p><strong>Veículo:</strong> Portal UOL (com orientações da FEBRABAN) | <strong>Tema:</strong> Acesso remoto fraudulento.</p>
+      </div>
+      <p><strong>O que aconteceu e quem foi afetado:</strong> Uma organização criminosa montou falsas centrais de atendimento bancário para enganar correntistas em diferentes estados. As vítimas recebiam ligações alertando sobre falsas transações e eram induzidas a instalar ferramentas de controle remoto.</p>
+      <p><strong>Prejuízos causados:</strong> Os invasores realizavam transferências via PIX, pagamentos de boletos e contratação de crédito pessoal em poucos minutos, gerando prejuízos financeiros elevados às vítimas.</p>
+      <p><strong>Como foi descoberto e resolvido:</strong> Após denúncias das vítimas e rastreamento financeiro das contas que recebiam os valores desviados, a Polícia Civil deflagrou operação para cumprir mandados de prisão e busca e apreensão, desarticulando o grupo e apreendendo celulares e computadores usados nas fraudes.</p>
+    </section>
+
+    <!-- Prevenção -->
+    <section id="prevencao" class="card">
+      <h2>3. Como se Prevenir (5 Orientações Práticas)</h2>
+      <ol>
+        <li><strong>Desconfie de ligações do banco:</strong> Bancos legítimos nunca ligam pedindo para você instalar aplicativos ou informar senhas e tokens.</li>
+        <li><strong>Desligue e ligue de outro aparelho:</strong> Se receber aviso de compra suspeita, encerre a chamada e ligue você mesmo para o número oficial no verso do seu cartão (de preferência de outro telefone, pois golpistas podem prender a linha).</li>
+        <li><strong>Nunca instale apps de acesso remoto por instrução de terceiros:</strong> Não baixe aplicativos fora da Google Play Store ou App Store (arquivos APK) nem dê permissão de "Acessibilidade" a apps desconhecidos.</li>
+        <li><strong>Ative a verificação em duas etapas e limites no PIX:</strong> Configure limites baixos para transferências noturnas e ative biometria nos apps financeiros.</li>
+        <li><strong>Caiu no golpe? Aja rápido:</strong> Desconecte o celular da internet imediatamente (modo avião), desinstale o app suspeito, avise o banco para ativar o MED (Mecanismo Especial de Devolução do PIX) e registre Boletim de Ocorrência.</li>
+      </ol>
+    </section>
+
+    <!-- Funcionalidade Interativa Extra -->
+    <section id="simulador" class="card destaque">
+      <h2>4. Simulador Interativo: Você cairia nesse contato?</h2>
+      <p>Leia a situação abaixo e escolha qual atitude tomar:</p>
+      <div class="cenario">
+        <p>📞 <em>"Olá, aqui é da Central de Segurança do seu Banco. Identificamos uma tentativa de compra de R$ 2.890,00 no seu cartão. Para cancelar agora, preciso que você baixe o aplicativo 'SuporteSeguro' e me passe o código que aparece na tela."</em></p>
+      </div>
+      <div class="botoes-simulador">
+        <button onclick="avaliarSimulador('errado1')">Baixar o app rápido para não perder o dinheiro</button>
+        <button onclick="avaliarSimulador('errado2')">Passar apenas o código, mas não instalar nada</button>
+        <button onclick="avaliarSimulador('certo')">Desligar na hora e conferir direto no app oficial do banco</button>
+      </div>
+      <p id="resposta-simulador" class="feedback"></p>
+    </section>
+
+    <!-- Quiz Obrigatório -->
+    <section id="quiz" class="card">
+      <h2>5. Quiz: Teste seus Conhecimentos</h2>
+      <div id="quiz-container"></div>
+      <button id="btn-finalizar" onclick="calcularResultado()">Verificar Pontuação</button>
+      <p id="resultado-quiz" class="feedback"></p>
+    </section>
+
+    <!-- Seção Obrigatória: Computadores Compartilhados -->
+    <section id="compartilhados" class="card">
+      <h2>6. Segurança no uso de computadores compartilhados</h2>
+      <p>Ao utilizar computadores em laboratórios do SENAI, escolas, empresas ou ambientes industriais, siga estas orientações essenciais:</p>
+
+      <div class="grid-2">
+        <div>
+          <h3>🔒 Segurança da Informação e Proteção de Dados</h3>
+          <ul>
+            <li><strong>1. Use sua conta individual:</strong> Sempre acesse com seu próprio usuário e nunca compartilhe sua senha com colegas.</li>
+            <li><strong>2. Não salve senhas no navegador:</strong> Ao entrar em e-mails, GitHub ou sistemas, recuse a opção "Salvar senha" e prefira usar a janela anônima.</li>
+            <li><strong>3. Faça logout ao terminar:</strong> Encerre sua sessão em todos os sites e faça logoff do Windows/Linux antes de sair.</li>
+            <li><strong>4. Não deixe arquivos pessoais no PC:</strong> Evite salvar documentos na Área de Trabalho ou Downloads; use seu pen drive próprio ou nuvem e apague os arquivos locais após o uso.</li>
+            <li><strong>5. Cuidado com dispositivos desconhecidos:</strong> Não conecte pen drives de origem duvidosa nem baixe programas sem autorização do instrutor ou TI.</li>
+            <li><strong>6. Bloqueie a tela ao se ausentar:</strong> Vai beber água ou falar com o professor? Pressione <code>Win + L</code> para bloquear o computador.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>🪑 Segurança Física, Ergonomia e Organização (NR-17)</h3>
+          <ul>
+            <li><strong>7. Ajuste cadeira e monitor:</strong> Mantenha a coluna apoiada, pés no chão e o topo da tela na altura dos olhos para evitar dores no pescoço e lombar.</li>
+            <li><strong>8. Postura de braços e punhos:</strong> Mantenha ombros relaxados e antebraços apoiados ao digitar e usar o mouse.</li>
+            <li><strong>9. Faça pausas regulares:</strong> Alterne tarefas e descanse a visão a cada 50 minutos de uso contínuo.</li>
+            <li><strong>10. Mantenha líquidos longe dos equipamentos:</strong> Não deixe garrafas abertas ou copos perto de teclados, gabinetes e tomadas, nem puxe cabos.</li>
+            <li><strong>11. Higiene e conservação do posto:</strong> Verifique limpeza de teclado e mouse compartilhados e mantenha cabos organizados para evitar quedas.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="checklist-box">
+        <h3>✅ Checklist Rápido: Antes, Durante e Depois de Usar o PC</h3>
+        <label><input type="checkbox"> <strong>Antes:</strong> Verifiquei cabos, limpeza do posto, ajustei a cadeira/monitor e entrei na minha conta pessoal.</label><br>
+        <label><input type="checkbox"> <strong>Durante:</strong> Mantive líquidos afastados, não baixei arquivos suspeitos e bloqueei a tela (Win+L) ao levantar.</label><br>
+        <label><input type="checkbox"> <strong>Depois:</strong> Salvei meus arquivos na nuvem/pen drive, apaguei da máquina, saí de todas as contas (logout) e deixei o posto organizado.</label>
+      </div>
+    </section>
+
+    <!-- Fontes -->
+    <section id="fontes" class="card">
+      <h2>7. Fontes Consultadas</h2>
+      <ul>
+        <li><strong>UOL Notícias:</strong> Reportagens sobre atuação policial e prevenção contra o golpe da "mão fantasma".</li>
+        <li><strong>FEBRABAN (Federação Brasileira de Bancos):</strong> Orientações oficiais sobre falsa central de atendimento e acesso remoto (<a href="https://antifraudes.febraban.org.br/" target="_blank">antifraudes.febraban.org.br</a>).</li>
+        <li><strong>CERT.br:</strong> Cartilha de Segurança para Internet e Dicas para equipamentos compartilhados (<a href="https://cartilha.cert.br/" target="_blank">cartilha.cert.br</a>).</li>
+        <li><strong>Ministério do Trabalho e Emprego:</strong> Norma Regulamentadora nº 17 (NR-17 — Ergonomia).</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto desenvolvido para a SIPAT 2026 — Curso Técnico em Desenvolvimento de Sistemas (SENAI) | Lilian Eliani Alanoca Quispe</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
